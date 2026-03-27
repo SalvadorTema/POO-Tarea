@@ -19,6 +19,28 @@ public class Main {
         
         System.out.println("=");
         System.out.println(); // Salto de línea para separar el siguiente ejercicio
+   
+        //  EJERCICIO 2: CLASE RECTÁNGULO 
+        System.out.println("EJERCICIO 2: RECTÁNGULOS");
+
+        // 1. Crear 2 objetos de la clase Rectangulo
+        Rectangulo r1 = new Rectangulo(10.5, 5.0);
+        Rectangulo r2 = new Rectangulo(7.2, 8.4);
+
+        // 2. Mostrar áreas
+        System.out.println("Área Rectángulo 1: " + r1.area());
+        System.out.println("Área Rectángulo 2: " + r2.area());
+
+        // 3. Comparar cuál tiene mayor área
+        if (r1.area() > r2.area()) {
+            System.out.println("El Rectángulo 1 tiene el área mayor.");
+        } else if (r2.area() > r1.area()) {
+            System.out.println("El Rectángulo 2 tiene el área mayor.");
+        } else {
+            System.out.println("Ambos rectángulos tienen la misma área.");
+        }
+        
+        System.out.println("=");
         
     }
 }
