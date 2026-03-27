@@ -59,5 +59,18 @@ public class Main {
 
         System.out.println("=");//Salto de linea
         
+     //  EJERCICIO 4: CUENTA 
+        System.out.println("EJERCICIO 4: CUENTA BANCARIA");
+
+        Cuenta miCuenta = new Cuenta("Alexander Tema", 500.0);
+
+        miCuenta.depositar(200.0);  // Saldo: 700.0
+        miCuenta.retirar(100.0);    // Saldo: 600.0
+        miCuenta.retirar(800.0);    
+
+        miCuenta.mostrarSaldo();    // Debe mostrar 600.0
+
+        System.out.println("="); //Salto de linea
+        
     }
 }
