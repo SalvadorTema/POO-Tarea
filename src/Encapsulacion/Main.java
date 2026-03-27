@@ -18,7 +18,7 @@ public class Main {
         p3.mostrar();
         
         System.out.println("=");
-        System.out.println(); // Salto de línea para separar el siguiente ejercicio
+        System.out.println(); // Salto de línea 
    
         //  EJERCICIO 2: CLASE RECTÁNGULO 
         System.out.println("EJERCICIO 2: RECTÁNGULOS");
@@ -40,7 +40,24 @@ public class Main {
             System.out.println("Ambos rectángulos tienen la misma área.");
         }
         
-        System.out.println("=");
+        System.out.println("="); //Salto de línea 
+        
+     //  EJERCICIO 3: PRODUCTO 
+        System.out.println("EJERCICIO 3: PRODUCTOS");
+
+        // 1. Crear 2 productos
+        Producto prod1 = new Producto("A101", "Laptop", 1500.0);
+        Producto prod2 = new Producto("B202", "Celular", 800.0);
+
+        // 2. Aplicar descuentos distintos
+        prod1.aplicarDescuento(10); // 
+        prod2.aplicarDescuento(20);
+
+        // 3. Mostrar resultados
+        prod1.mostrar();
+        prod2.mostrar();
+
+        System.out.println("=");//Salto de linea
         
     }
 }
