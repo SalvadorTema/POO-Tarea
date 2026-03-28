@@ -88,6 +88,23 @@ public class Main {
                 L.mostrarInfo();
             }
         }
-        System.out.println("="); //Salto de linea 
+        System.out.println("="); //Salto de linea
+        
+     // EJERCICIO 6: CALCULADORA 
+        System.out.println("EJERCICIO 6: CALCULADORA");
+        Calculadora miCalc = new Calculadora();
+        
+        double num1 = 10;
+        double num2 = 0; // Probaremos con cero para validar
+        
+        System.out.println("Suma: " + miCalc.sumar(num1, 5));
+        System.out.println("Resta: " + miCalc.restar(num1, 3));
+        System.out.println("Multiplicacion: " + miCalc.multiplicar(num1, 2));
+        
+        // Prueba de validacion de division entre cero
+        System.out.print("Division: ");
+        System.out.println(miCalc.dividir(num1, num2));
+        
+        System.out.println("="); //Salto de linea
     }
 }
