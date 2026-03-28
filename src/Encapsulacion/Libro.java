@@ -21,5 +21,6 @@ public class Libro {
     // Método para poder ver los datos en consola
     public void mostrarInfo() {
         System.out.println("Libro: " + titulo + " | Autor: " + autor + " | Pags: " + paginas);
+   
     }
 }

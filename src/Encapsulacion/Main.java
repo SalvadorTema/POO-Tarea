@@ -106,5 +106,27 @@ public class Main {
         System.out.println(miCalc.dividir(num1, num2));
         
         System.out.println("="); //Salto de linea
+  
+     // EJERCICIO 7: CLASE FECHA 
+        System.out.println("EJERCICIO 7: VALIDACION DE FECHAS");
+
+        // 1. Crear 3 fechas (una válida, una con día mal, una con mes mal)
+        Fecha f1 = new Fecha(15, 5, 2024);
+        Fecha f2 = new Fecha(40, 3, 2023); // Día inválido
+        Fecha f3 = new Fecha(10, 15, 2022); // Mes inválido
+
+        // 2. Mostrar si son válidas
+        Fecha[] fechas = {f1, f2, f3};
+
+        for (Fecha f : fechas) {
+            f.mostrar();
+            if (f.esValida()) {
+                System.out.println("-> Resultado: Fecha Valida");
+            } else {
+                System.out.println("-> Resultado: Fecha INVALIDA");
+            }
+        }
+        System.out.println("=");
+    
     }
 }
