@@ -72,5 +72,22 @@ public class Main {
 
         System.out.println("="); //Salto de linea
         
+     //  EJERCICIO 5: CLASE LIBRO 
+        System.out.println("EJERCICIO 5: LIBROS LARGOS (>300 PAGS)");
+
+        // 1. Creamos los 3 libros que pide el ejercicio
+        Libro libro1 = new Libro("Cien anos de soledad", "Gabriel Garcia", 471);
+        Libro libro2 = new Libro("El Principito", "Antoine de Saint-Exupery", 96);
+        Libro libro3 = new Libro("Don Quijote de la Mancha", "Miguel de Cervantes", 1032);
+
+        // 2. Mostrar cuáles cumplen la condición
+        Libro[] listaLibros = {libro1, libro2, libro3};
+
+        for (Libro L : listaLibros) {
+            if (L.esLargo()) {
+                L.mostrarInfo();
+            }
+        }
+        System.out.println("="); //Salto de linea 
     }
 }
